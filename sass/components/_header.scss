@@ -1,8 +1,12 @@
+.header {
+  position: relative;
+}
 .page-header,
-.navigation {
-  display: flex;
+.nav {
+  // display: flex;
   align-items: center;
 }
+
 .site-nav__link,
 .auth-nav__link {
   padding-top: 32px;
@@ -10,7 +14,7 @@
 }
 
 .site-nav {
-  display: flex;
+  // display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 93px;
@@ -40,28 +44,30 @@
   position: relative;
   color: var(--accent-color);
 
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  @media screen and (min-width: 768px) {
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
 
-    content: '';
-    width: 100%;
-    border: 2px solid var(--accent-color);
-    border-radius: 2px;
-    background-color: var(--accent-color);
+      content: '';
+      width: 100%;
+      border: 2px solid var(--accent-color);
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
   }
 }
 
 .auth-nav {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .auth-nav__link {
-  display: flex;
+  // display: flex;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -84,4 +90,39 @@
 
 .auth-nav__item:last-child {
   margin-left: 30px;
+}
+
+.menu-button {
+  position: absolute;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  // height: 100vh;
+  width: 100%;
+  outline: 1px solid tomato;
+
+  &.is-open {
+    display: block;
+  }
 }

@@ -5,6 +5,7 @@
 }
 
 .footer-card {
+  // width: 100%;
   display: flex;
   flex-basis: calc((50% - 45px) / 2);
   justify-content: space-between;
@@ -12,6 +13,7 @@
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -20,6 +22,10 @@
 }
 
 .address {
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-style: normal;
   color: var(--main-color);
 }
@@ -48,6 +54,12 @@
   margin-top: 9px;
 }
 
+.footer-contacts {
+  // display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .social__title {
   margin-bottom: 20px;
 
@@ -72,6 +84,9 @@
 }
 
 .card-news {
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-basis: calc(50% - 15px);
 }
 
