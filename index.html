@@ -15,13 +15,14 @@
     <div class="container page-header">
       <a class="logo" href="./index.html"><span class="logo-accent-color">Web</span>Studio</a>
 
-      <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
           <use class="icon-cross" href="./images/icon/sprite.svg#icon-cross"></use>
           <use class="icon-menu" href="./images/icon/sprite.svg#icon-menu"></use>
         </svg>
       </button>
-      <div class="menu-container" data-menu>
+
+      <div class="menu-container" id="menu-container" data-menu>
         <nav class="nav">
           <ul class="site-nav list">
             <li class="site-nav__item"><a class="site-nav__link link site-nav__current" href="./index.html">Студия</a>
@@ -42,7 +43,14 @@
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        <ul class="menu-social list">
+          <li class="menu-social__link link">Instagram</li>
+          <li class="menu-social__link">Twitter</li>
+          <li class="menu-social__link">Facebook</li>
+          <li class="menu-social__link">LinkedIn</li>
+        </ul>
       </div>
+
 
     </div>
 
