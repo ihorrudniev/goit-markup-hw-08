@@ -1,16 +1,17 @@
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    outline: 2px solid tomato;
 
-  width: 100%;
-  outline: 2px solid tomato;
-
-  &.is-open {
-    display: block;
-    background-color: var(--main-color);
-    z-index: 2;
+    &.is-open {
+      display: block;
+      background-color: var(--main-color);
+      z-index: 2;
+    }
   }
 }
 
@@ -31,6 +32,12 @@
       fill: var(--accent-color);
       cursor: pointer;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
   }
 }
 
