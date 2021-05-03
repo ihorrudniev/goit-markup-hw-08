@@ -345,8 +345,15 @@ img {
 .page-header,
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header,
+  .nav {
+    justify-content: space-between;
+  }
 }
 
 .site-nav__link {
@@ -358,15 +365,18 @@ img {
   padding: 5px 0;
 }
 
-.site-nav {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 93px;
-}
-
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
   }
 }
 
@@ -416,16 +426,27 @@ img {
   }
 }
 
-.auth-nav {
-  margin-left: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 @media screen and (max-width: 767px) {
   .auth-nav {
     flex-direction: column-reverse;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+    margin-left: 305px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
