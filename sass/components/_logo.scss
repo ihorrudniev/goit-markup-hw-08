@@ -1,12 +1,12 @@
 .logo {
-  display: inline-block;
+  // display: inline-block;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
+  color: var(--title-color);
 }
 
 .logo-accent-color {
@@ -15,6 +15,7 @@
 
 @media screen and (max-width: 767px) {
   .logo {
-    margin: 16px 15px;
+    display: inline-block;
+    padding: 16px 15px;
   }
 }
