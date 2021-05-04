@@ -1,10 +1,12 @@
 .logo {
   // display: inline-block;
+  padding: 16px 0;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
@@ -13,9 +15,11 @@
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .logo {
     display: inline-block;
-    padding: 16px 15px;
+
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
