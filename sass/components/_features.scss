@@ -1,13 +1,19 @@
-.features {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .features {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
+// @media screen and (min-width: 1140px) {
+//   .features {
+//     margin: -30px;
+//   }
+// }
+
 .features__item {
   align-items: center;
-  // max-width: 270px;
 
   &::before {
     content: '';
@@ -21,23 +27,25 @@
   }
 
   &:not(:last-child) {
-    // margin-right: 30px;
-    @media screen and (min-width: 1200px) {
-      flex-basis: calc(100% / 2 - 45px);
-    }
+    margin-bottom: 30px;
   }
+}
 
-  // @media screen and (min-width: 768px) {
-  //   flex-basis: calc(100% / 2 - 45px);
-  // }
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
 
-  // @media screen and (min-width: 1200px) {
-  //   // width: 270px;
-  //   flex-basis: calc(100% / 4 - 45px);
-  // }
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .features__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -45,22 +53,6 @@
   text-transform: uppercase;
   color: var(--title-color);
 }
-
-// .antenna-icon::before {
-//   background-image: url(../images/icon/antenna.svg);
-// }
-
-// .clock-icon::before {
-//   background-image: url(../images/icon/clock.svg);
-// }
-
-// .diagram-icon::before {
-//   background-image: url(../images/icon/diagram.svg);
-// }
-
-// .astronaut-icon::before {
-//   background-image: url(../images/icon/astronaut.svg);
-// }
 
 @each $iconName in 'antenna', 'clock', 'diagram', 'astronaut' {
   .#{$iconName}-icon::before {
