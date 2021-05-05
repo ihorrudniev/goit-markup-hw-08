@@ -6,12 +6,6 @@
   }
 }
 
-// @media screen and (min-width: 1140px) {
-//   .features {
-//     margin: -30px;
-//   }
-// }
-
 .features__item {
   align-items: center;
 
@@ -26,8 +20,10 @@
     background-color: var(--secondary-background-color);
   }
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -52,8 +48,21 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
+.features__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--main-text-color);
+}
 @each $iconName in 'antenna', 'clock', 'diagram', 'astronaut' {
   .#{$iconName}-icon::before {
     background-image: url(../images/icon/#{$iconName}.svg);

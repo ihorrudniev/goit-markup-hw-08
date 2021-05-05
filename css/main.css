@@ -337,10 +337,17 @@ body.modal-open {
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.18;
+  }
 }
 
 .section__backgroung {
@@ -456,7 +463,7 @@ body.modal-open {
   .auth-nav {
     display: flex;
     flex-direction: column;
-    margin-left: 84px;
+    margin-left: 70px;
   }
 }
 
@@ -776,8 +783,10 @@ body.modal-open {
   background-color: var(--secondary-background-color);
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -801,6 +810,21 @@ body.modal-open {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
+}
+
+.features__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-text-color);
 }
 
 .antenna-icon::before {
@@ -833,8 +857,14 @@ body.modal-open {
   margin-right: 30px;
 }
 
-.container > .section__title {
-  margin-bottom: 50px;
+.section__title {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
 }
 
 .work__thumb {
@@ -942,6 +972,8 @@ body.modal-open {
 }
 
 .clients {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }

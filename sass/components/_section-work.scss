@@ -11,8 +11,12 @@
   margin-right: 30px;
 }
 
-.container > .section__title {
-  margin-bottom: 50px;
+.section__title {
+  margin-bottom: 30px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .work__thumb {
