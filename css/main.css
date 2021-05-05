@@ -999,11 +999,21 @@ body.modal-open {
   margin-top: -30px;
 }
 
+@media screen and (max-width: 768px) {
+  .clients {
+    margin: -15px;
+  }
+}
+
+.clients__item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 767px) {
   .clients__item {
     flex-basis: calc((100% - 2 * 30px) / 2);
-    margin-left: 30px;
-    margin-top: 30px;
+    margin: 15px;
   }
 }
 
