@@ -1,14 +1,16 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-.clients__item {
-  flex-basis: calc(100% / 6 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+@media screen and (max-width: 767px) {
+  .clients__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .clients__link {
