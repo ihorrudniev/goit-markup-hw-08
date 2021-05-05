@@ -1097,8 +1097,9 @@ body.modal-open {
   position: relative;
   top: 50%;
   left: 50%;
-  max-width: 528px;
-  height: 581px;
+  max-width: 450px;
+  height: 609px;
+  padding: 40px;
   background: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1106,19 +1107,27 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
+}
+
 .modal__text {
-  top: 40px;
+  margin-bottom: 12px;
+  max-width: 370px;
   text-align: center;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 700;
-  font-size: 20px;
   color: var(--title-color);
 }
 
-@media screen and (mix-width: 1200px) {
-  .modal-text {
+@media screen and (min-width: 1200px) {
+  .modal__text {
     line-height: 1.15;
-    position: absolute;
+    max-width: 448px;
   }
 }
 
@@ -1126,13 +1135,18 @@ body.modal-open {
   position: absolute;
   display: flex;
   align-items: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
 }
 
 @media screen and (min-width: 1200px) {
   .checkbox__label {
-    margin-left: 50px;
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -1168,17 +1182,13 @@ body.modal-open {
   margin-left: 5px;
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--accent-color);
 }
 
 .form {
-  margin-bottom: 20px;
   max-width: 448px;
-  padding-top: 75px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .form__field {
@@ -1252,6 +1262,10 @@ body.modal-open {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.concent-button {
+  position: relative;
 }
 
 .thumb__link {

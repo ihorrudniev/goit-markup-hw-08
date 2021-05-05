@@ -1,9 +1,5 @@
 .form {
-  margin-bottom: 20px;
   max-width: 448px;
-  padding-top: 75px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .form__field {
@@ -82,4 +78,8 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+}
+
+.concent-button {
+  position: relative;
 }
