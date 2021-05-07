@@ -1007,6 +1007,18 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin: -15px;
+  }
+}
+
 .clients__item {
   margin-left: 15px;
   margin-top: 15px;
@@ -1014,21 +1026,21 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .clients__item {
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
-    flex-basis: calc((100% - 3 * 30px) / 3);
+    width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    flex-basis: calc((100% - 6 * 30px) / 6);
+    width: calc((100% - 6 * 30px) / 6);
     margin: 15px;
   }
 }
@@ -1057,16 +1069,17 @@ body.modal-open {
 }
 
 .footer-card {
+  text-align: center;
   width: 100%;
   flex-basis: calc((50% - 45px) / 2);
   align-items: baseline;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -1076,6 +1089,12 @@ body.modal-open {
   }
 }
 
+.footer-logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .logo-main-color {
   color: var(--main-color);
 }
@@ -1083,14 +1102,19 @@ body.modal-open {
 .address {
   flex-direction: column;
   align-items: center;
-  text-align: center;
   font-style: normal;
   color: var(--main-color);
 }
 
 .footer-nav {
   flex-direction: column;
-  margin-top: 9px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    margin-top: 9px;
+  }
 }
 
 .footer-nav__link {
@@ -1107,19 +1131,25 @@ body.modal-open {
 }
 
 .footer-nav__item:not(:first-child) {
-  margin-top: 9px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-nav__item:not(:first-child) {
+    margin-top: 9px;
+  }
 }
 
 .footer-contacts {
   align-items: center;
   flex-direction: column;
-  text-align: center;
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer-contacts {
-    width: calc(100% / 2);
+    text-align: left;
+    padding-bottom: 0;
   }
 }
 
@@ -1148,18 +1178,12 @@ body.modal-open {
 .card-news {
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card-news {
-    width: 450px;
-  }
+  flex-basis: calc(50% - 15px);
 }
 
 @media screen and (min-width: 1200px) {
   .card-news {
-    width: 450px;
+    display: flex;
   }
 }
 
@@ -1172,17 +1196,24 @@ body.modal-open {
   color: var(--main-color);
 }
 
+@media screen and (mai-width: 1200px) {
+  .news__title {
+    text-align: left;
+  }
+}
+
 .forms {
   text-align: center;
 }
 
-.forms__footer {
-  margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+  .forms {
+    display: flex;
+  }
 }
 
 .forms__input {
   align-items: center;
-  width: 100%;
   height: 50px;
   padding-left: 16px;
   font-weight: 400;
@@ -1196,21 +1227,44 @@ body.modal-open {
   background-color: var(--container-bg-color);
 }
 
+@media screen and (max-width: 479px) {
+  .forms__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .forms__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .forms__input {
+    width: 358px;
+  }
+}
+
 .button__title {
+  display: inline-flex;
+  align-items: center;
   width: 200px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 20px;
   padding: 10px 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-transform: capitalize;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .button__title {
+    margin-top: 0px;
+    margin-left: 12px;
+  }
 }
 
 .button__icon {
