@@ -135,7 +135,6 @@ summary {
   --border-item-card-set: #eeeeee;
   --hero-background-color: #c4c4c4;
   --icon-fill-color: #afb1b8;
-  --card-set-gap: 30px;
 }
 
 /* raleway-regular - latin_cyrillic */
@@ -1086,7 +1085,6 @@ body.modal-open {
 
 .footer-card {
   width: 100%;
-  flex-basis: calc((50% - 45px) / 2);
   align-items: baseline;
 }
 
@@ -1164,13 +1162,13 @@ body.modal-open {
 .footer-contacts {
   align-items: center;
   flex-direction: column;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     text-align: left;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1198,7 +1196,6 @@ body.modal-open {
 
 .card-news {
   flex-direction: column;
-  flex-basis: calc(50% - 15px);
 }
 
 @media screen and (min-width: 1200px) {
