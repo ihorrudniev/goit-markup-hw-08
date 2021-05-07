@@ -5,18 +5,15 @@
 }
 
 .footer-card {
-  text-align: center;
   width: 100%;
-  // display: flex;
+
   flex-basis: calc((50% - 45px) / 2);
-  // justify-content: space-between;
+
   align-items: baseline;
 
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  // }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -30,7 +27,7 @@
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -40,7 +37,6 @@
 }
 
 .address {
-  // display: flex;
   flex-direction: column;
   align-items: center;
 
@@ -81,7 +77,6 @@
 }
 
 .footer-contacts {
-  // display: flex;
   align-items: center;
   flex-direction: column;
   padding-bottom: 60px;
@@ -89,7 +84,6 @@
   @media screen and (min-width: 1200px) {
     text-align: left;
     padding-bottom: 0;
-    // justify-content: space-between;
   }
 }
 
@@ -118,7 +112,7 @@
 
 .card-news {
   flex-direction: column;
-  align-items: center;
+
   flex-basis: calc(50% - 15px);
 
   @media screen and (min-width: 1200px) {
