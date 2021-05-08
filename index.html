@@ -102,19 +102,30 @@
         <ul class="work__list list">
           <li class="list__img">
             <div class="work__thumb">
-              <img src="./images/work/box1.jpg" alt="Написание сайтов" width="370">
+              <picture>
+                <source srcset="./images/work/box1.jpg 1x, ./images/work/box1@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./images/work/box1.jpg" alt="Написание сайтов" width="370">
+              </picture>
               <p class="work__item">десктопные приложения</p>
             </div>
           </li>
           <li class="list__img">
             <div class="work__thumb">
-              <img src="./images/work/box2.jpg" alt="Адаптация сайтов" width="370">
+              <picture>
+                <source srcset="./images/work/box2.jpg 1x, ./images/work/box2@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./images/work/box2.jpg" alt="Адаптация сайтов" width="370">
+              </picture>
+
               <p class="work__item">Мобильные приложения</p>
             </div>
           </li>
           <li class="list__img">
             <div class="work__thumb">
-              <img src="./images/work/box3.jpg" alt="Дизайн сайтов" width="370">
+              <picture>
+                <source srcset="./images/work/box3.jpg 1x, ./images/work/box3@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./images/work/box3.jpg" alt="Дизайн сайтов" width="370">>
+              </picture>
+
               <p class="work__item">Дизайнерские решения</p>
             </div>
           </li>
@@ -131,7 +142,15 @@
         <ul class="card list">
           <li class="card__item">
             <div class="card__img">
-              <img src="./images/team/img-4.jpg" alt="карточка сотрудника 4" width="270">
+              <picture>
+                <source srcset="./images/team/desktop/i.d.desktop.jpg 1x, ./images/team/desktop/i.d.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/i.d.tablet.jpg 1x, ./images/team/tablet/i.d.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/i.d.mobile.jpg 1x, ./images/team/mobile/i.d.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="./images/team/desktop/i.d.desktop.jpg" alt="карточка сотрудника 1" width="450">
+              </picture>
             </div>
             <div class="card__content">
               <h3 class="tiam__title">Игорь Демьяненко</h3>
@@ -171,7 +190,15 @@
 
           <li class="card__item">
             <div class="card__img">
-              <img src="./images/team/img-3.jpg" alt="карточка сотрудника 3" width="270">
+              <picture>
+                <source srcset="./images/team/desktop/o.r.desktop.jpg 1x, ./images/team/desktop/o.r.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/o.r.tablet.jpg 1x, ./images/team/tablet/o.r.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/o.r.mobile.jpg 1x, ./images/team/mobile/o.r.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="./images/team/desktop/o.r.desktop.jpg" alt="карточка сотрудника 1" width="450">
+              </picture>
             </div>
             <div class="card__content">
               <h3 class="tiam__title">Ольга Репина</h3>
@@ -211,7 +238,15 @@
 
           <li class="card__item">
             <div class="card__img">
-              <img src="./images/team/img-2.jpg" alt="карточка сотрудника 2" width="270">
+              <picture>
+                <source srcset="./images/team/desktop/n.t.desktop.jpg 1x, ./images/team/desktop/n.t.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/n.t.tablet.jpg 1x, ./images/team/tablet/n.t.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/n.t.mobile.jpg 1x, ./images/team/mobile/n.t.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="./images/team/desktop/n.t.desktop.jpg" alt="карточка сотрудника 1" width="450">
+              </picture>
             </div>
             <div class="card__content">
               <h3 class="tiam__title">Николай Тарасов</h3>
@@ -251,7 +286,15 @@
 
           <li class="card__item">
             <div class="card__img">
-              <img src="./images/team/img-1.jpg" alt="карточка сотрудника 1" width="270">
+              <picture>
+                <source srcset="./images/team/desktop/m.e.desktop.jpg 1x, ./images/team/desktop/m.e.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source srcset="./images/team/tablet/m.e.tablet.jpg 1x, ./images/team/tablet/m.e.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source srcset="./images/team/mobile/m.e.mobile.jpg 1x, ./images/team/mobile/m.e.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="./images/team/desktop/m.e.desktop.jpg" alt="карточка сотрудника 1" width="450">
+              </picture>
             </div>
             <div class="card__content">
               <h3 class="tiam__title">Михаил Ермаков</h3>
@@ -470,19 +513,6 @@
   </div>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
-  <!-- <script src="./js/js-speaker-form.js"></script> -->
-
-  <!-- <script>
-    (() => {
-      document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-        e.preventDefault();
-
-        new FormData(e.currentTarget).forEach((value, name) =>
-          console.log(`${name}: ${value}`),
-        );
-      });
-    })();
-  </script> -->
 
 </body>
 
