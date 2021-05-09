@@ -275,16 +275,11 @@ body.modal-open {
 }
 
 .container {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -533,6 +528,7 @@ body.modal-open {
 
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-social__link {
@@ -554,6 +550,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .nav-contacts {
+    width: 100vw;
     padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
@@ -676,12 +673,18 @@ body.modal-open {
   color: var(--main-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 320px) {
   .hero__title {
-    width: 360px;
+    width: 320px;
     font-size: 26px;
     line-height: 1.62;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 1199px) {
+  .hero__title {
+    width: 360px;
   }
 }
 

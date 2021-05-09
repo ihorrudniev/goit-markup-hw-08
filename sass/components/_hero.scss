@@ -47,11 +47,18 @@
   text-transform: uppercase;
   color: var(--main-color);
 
-  @media screen and (max-width: 1199px) {
-    width: 360px;
+  @media screen and (min-width: 320px) {
+    width: 320px;
     font-size: 26px;
     line-height: 1.62;
     text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 1199px) {
+    width: 360px;
+    // font-size: 26px;
+    // line-height: 1.62;
+    // text-transform: uppercase;
   }
 
   @media screen and (min-width: 1200px) {
